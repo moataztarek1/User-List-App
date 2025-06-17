@@ -1,0 +1,51 @@
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.search-bar {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.user-card {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+}
+
+.user-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.chip {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: white;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+
+.chip-red {
+  background-color: red;
+}
+
+.chip-green {
+  background-color: green;
+}
+
+.chip-yellow {
+  background-color: goldenrod;
+}

@@ -1,0 +1,17 @@
+<div class="container">
+  <h2>Users</h2>
+  <input [(ngModel)]="searchText" placeholder="email" class="search-bar" />
+
+  <div class="user-grid">
+    <div class="user-card" *ngFor="let user of filteredUsers">
+      <img [src]="user.profilePicture" alt="Profile" />
+      <span class="chip" [ngClass]="getRoleClass(user.role)">
+        {{ user.role }}
+      </span>
+      <p><strong>{{ user.username }}</strong></p>
+      <p>{{ user.email }}</p>
+      <p>{{ user.phone }}</p>
+      <p>{{ user.birthdate }}</p>
+    </div>
+  </div>
+</div>
